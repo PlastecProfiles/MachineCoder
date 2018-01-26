@@ -85,4 +85,7 @@ Public Class machineCode
 
     Private m_ChildFormNumber As Integer
 
+    Private Sub draw_line_Click(sender As Object, e As EventArgs) Handles draw_line.Click
+
+    End Sub
 End Class
