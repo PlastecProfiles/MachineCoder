@@ -88,4 +88,8 @@ Public Class machineCode
     Private Sub draw_line_Click(sender As Object, e As EventArgs) Handles draw_line.Click
 
     End Sub
+
+    Private Sub machineCode_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

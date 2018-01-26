@@ -74,10 +74,10 @@ Partial Class machineCode
         Me.PrintPreviewToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.HelpToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.draw_line = New System.Windows.Forms.ToolStripButton()
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
-        Me.draw_line = New System.Windows.Forms.ToolStripButton()
         Me.MenuStrip.SuspendLayout()
         Me.ToolStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
@@ -282,7 +282,7 @@ Partial Class machineCode
         'OptionsToolStripMenuItem
         '
         Me.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem"
-        Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
         Me.OptionsToolStripMenuItem.Text = "&Options"
         '
         'WindowsMenu
@@ -442,6 +442,15 @@ Partial Class machineCode
         Me.HelpToolStripButton.Size = New System.Drawing.Size(23, 22)
         Me.HelpToolStripButton.Text = "Help"
         '
+        'draw_line
+        '
+        Me.draw_line.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.draw_line.Image = CType(resources.GetObject("draw_line.Image"), System.Drawing.Image)
+        Me.draw_line.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.draw_line.Name = "draw_line"
+        Me.draw_line.Size = New System.Drawing.Size(63, 22)
+        Me.draw_line.Text = "Draw Line"
+        '
         'StatusStrip
         '
         Me.StatusStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel})
@@ -457,19 +466,11 @@ Partial Class machineCode
         Me.ToolStripStatusLabel.Size = New System.Drawing.Size(39, 17)
         Me.ToolStripStatusLabel.Text = "Status"
         '
-        'draw_line
-        '
-        Me.draw_line.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.draw_line.Image = CType(resources.GetObject("draw_line.Image"), System.Drawing.Image)
-        Me.draw_line.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.draw_line.Name = "draw_line"
-        Me.draw_line.Size = New System.Drawing.Size(63, 22)
-        Me.draw_line.Text = "Draw Line"
-        '
         'machineCode
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(1219, 561)
         Me.Controls.Add(Me.ToolStrip)
         Me.Controls.Add(Me.MenuStrip)
