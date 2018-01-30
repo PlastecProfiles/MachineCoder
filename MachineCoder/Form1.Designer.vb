@@ -26,8 +26,12 @@ Partial Class Form1
         Me.line_draw = New System.Windows.Forms.Button()
         Me.circle_draw = New System.Windows.Forms.Button()
         Me.box_draw = New System.Windows.Forms.Button()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripContainer1.ContentPanel.SuspendLayout()
         Me.ToolStripContainer1.SuspendLayout()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'ToolStripContainer1
@@ -39,7 +43,7 @@ Partial Class Form1
         Me.ToolStripContainer1.ContentPanel.Controls.Add(Me.circle_draw)
         Me.ToolStripContainer1.ContentPanel.Controls.Add(Me.box_draw)
         Me.ToolStripContainer1.ContentPanel.Size = New System.Drawing.Size(36, 349)
-        Me.ToolStripContainer1.Location = New System.Drawing.Point(1, 50)
+        Me.ToolStripContainer1.Location = New System.Drawing.Point(0, 49)
         Me.ToolStripContainer1.Name = "ToolStripContainer1"
         Me.ToolStripContainer1.Size = New System.Drawing.Size(36, 374)
         Me.ToolStripContainer1.TabIndex = 1
@@ -72,23 +76,53 @@ Partial Class Form1
         Me.box_draw.Text = "Box"
         Me.box_draw.UseVisualStyleBackColor = True
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.ToolStripMenuItem2})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(1342, 24)
+        Me.MenuStrip1.TabIndex = 3
+        Me.MenuStrip1.Text = "File"
+        '
+        'ToolStripMenuItem1
+        '
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(43, 20)
+        Me.ToolStripMenuItem1.Text = "New"
+        '
+        'ToolStripMenuItem2
+        '
+        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(63, 20)
+        Me.ToolStripMenuItem2.Text = "Window"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1342, 883)
         Me.Controls.Add(Me.ToolStripContainer1)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
         Me.Text = "Form1"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.ToolStripContainer1.ContentPanel.ResumeLayout(False)
         Me.ToolStripContainer1.ResumeLayout(False)
         Me.ToolStripContainer1.PerformLayout()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents ToolStripContainer1 As ToolStripContainer
     Friend WithEvents line_draw As Button
     Friend WithEvents circle_draw As Button
     Friend WithEvents box_draw As Button
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
 End Class
