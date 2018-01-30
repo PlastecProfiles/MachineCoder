@@ -39,7 +39,7 @@ Partial Class Form1
         Me.ToolStripContainer1.ContentPanel.Controls.Add(Me.circle_draw)
         Me.ToolStripContainer1.ContentPanel.Controls.Add(Me.box_draw)
         Me.ToolStripContainer1.ContentPanel.Size = New System.Drawing.Size(36, 349)
-        Me.ToolStripContainer1.Location = New System.Drawing.Point(13, 51)
+        Me.ToolStripContainer1.Location = New System.Drawing.Point(1, 50)
         Me.ToolStripContainer1.Name = "ToolStripContainer1"
         Me.ToolStripContainer1.Size = New System.Drawing.Size(36, 374)
         Me.ToolStripContainer1.TabIndex = 1
@@ -78,6 +78,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1342, 883)
         Me.Controls.Add(Me.ToolStripContainer1)
+        Me.IsMdiContainer = True
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ToolStripContainer1.ContentPanel.ResumeLayout(False)
