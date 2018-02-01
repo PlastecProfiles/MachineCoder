@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class machineCoder
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -29,6 +29,8 @@ Partial Class Form1
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.x = New System.Windows.Forms.Label()
+        Me.y = New System.Windows.Forms.Label()
         Me.ToolStripContainer1.ContentPanel.SuspendLayout()
         Me.ToolStripContainer1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
@@ -80,8 +82,9 @@ Partial Class Form1
         '
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.ToolStripMenuItem2})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.MdiWindowListItem = Me.ToolStripMenuItem2
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1342, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1229, 24)
         Me.MenuStrip1.TabIndex = 3
         Me.MenuStrip1.Text = "File"
         '
@@ -97,17 +100,37 @@ Partial Class Form1
         Me.ToolStripMenuItem2.Size = New System.Drawing.Size(63, 20)
         Me.ToolStripMenuItem2.Text = "Window"
         '
-        'Form1
+        'x
+        '
+        Me.x.AutoSize = True
+        Me.x.Location = New System.Drawing.Point(1077, 496)
+        Me.x.Name = "x"
+        Me.x.Size = New System.Drawing.Size(12, 13)
+        Me.x.TabIndex = 5
+        Me.x.Text = "x"
+        '
+        'y
+        '
+        Me.y.AutoSize = True
+        Me.y.Location = New System.Drawing.Point(1145, 496)
+        Me.y.Name = "y"
+        Me.y.Size = New System.Drawing.Size(12, 13)
+        Me.y.TabIndex = 6
+        Me.y.Text = "y"
+        '
+        'machineCoder
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1342, 883)
+        Me.ClientSize = New System.Drawing.Size(1229, 518)
+        Me.Controls.Add(Me.y)
+        Me.Controls.Add(Me.x)
         Me.Controls.Add(Me.ToolStripContainer1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Name = "machineCoder"
+        Me.Text = "Machine Coder"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.ToolStripContainer1.ContentPanel.ResumeLayout(False)
         Me.ToolStripContainer1.ResumeLayout(False)
@@ -125,4 +148,6 @@ Partial Class Form1
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents x As Label
+    Friend WithEvents y As Label
 End Class
