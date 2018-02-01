@@ -29,8 +29,6 @@ Partial Class machineCoder
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.x = New System.Windows.Forms.Label()
-        Me.y = New System.Windows.Forms.Label()
         Me.ToolStripContainer1.ContentPanel.SuspendLayout()
         Me.ToolStripContainer1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
@@ -100,31 +98,11 @@ Partial Class machineCoder
         Me.ToolStripMenuItem2.Size = New System.Drawing.Size(63, 20)
         Me.ToolStripMenuItem2.Text = "Window"
         '
-        'x
-        '
-        Me.x.AutoSize = True
-        Me.x.Location = New System.Drawing.Point(1077, 496)
-        Me.x.Name = "x"
-        Me.x.Size = New System.Drawing.Size(12, 13)
-        Me.x.TabIndex = 5
-        Me.x.Text = "x"
-        '
-        'y
-        '
-        Me.y.AutoSize = True
-        Me.y.Location = New System.Drawing.Point(1145, 496)
-        Me.y.Name = "y"
-        Me.y.Size = New System.Drawing.Size(12, 13)
-        Me.y.TabIndex = 6
-        Me.y.Text = "y"
-        '
         'machineCoder
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1229, 518)
-        Me.Controls.Add(Me.y)
-        Me.Controls.Add(Me.x)
         Me.Controls.Add(Me.ToolStripContainer1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
@@ -148,6 +126,4 @@ Partial Class machineCoder
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
-    Friend WithEvents x As Label
-    Friend WithEvents y As Label
 End Class
